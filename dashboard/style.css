@@ -81,6 +81,7 @@ body {
 
 .no-outline {
     outline: none !important;
+    box-shadow: none !important;
 }
 
 @media (max-width: 768px) {
