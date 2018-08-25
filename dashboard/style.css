@@ -116,3 +116,9 @@ body {
     transform: translateY(-1px);
 }
 /* end of cards */
+
+/* overwrite Bootstrap */
+.btn-sm {
+    padding: .05rem .5rem;
+}
+/* end of overwrite Bootstrap */
