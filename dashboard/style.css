@@ -79,6 +79,9 @@ body {
     border-radius: 50%;
 }
 
+.no-outline {
+    outline: none !important;
+}
 
 @media (max-width: 768px) {
     .sidebar {
