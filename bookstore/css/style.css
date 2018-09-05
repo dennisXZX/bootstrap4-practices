@@ -63,6 +63,8 @@ header {
 
 /* gallery */
 .gallery-img {
+  width: 245px;
+  height: 190px;
   backface-visibility: hidden;
   transition: all .5s;
 }
