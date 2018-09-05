@@ -1,12 +1,12 @@
-$(document).ready(() => {
+$(document).ready(function() {
 
   // animate the navbar close button
-  $('.nav-button').click(() => {
+  $('.nav-button').click(function() {
     $('.nav-button').toggleClass('change');
   })
 
-  // animate the navbar when it scrolls to a certain position
-  $(window).scroll(() => {
+  // animate the navbar when user scrolls to a certain position
+  $(window).scroll(function() {
     let position = $(this).scrollTop();
 
     if (position >= 200) {
@@ -16,7 +16,8 @@ $(document).ready(() => {
     }
   })
 
-  $(window).scroll(() => {
+  // animate the mission highlight section when user scrolls to a certain position
+  $(window).scroll(function() {
     let position = $(this).scrollTop();
 
     if (position >= 650) {
@@ -28,4 +29,20 @@ $(document).ready(() => {
     }
   })
 
+  // gallery filter feature
+  $('.gallery-list-item').click(function() {
+    let value = $(this).attr('data-filter');
+
+    if (value === 'all') {
+      $('.filter').show(300);
+    } else {
+      $('.filter').not('.' + value).hide(300);
+      $('.filter').filter('.' + value).show(300);
+    }
+  })
+
+  // toggle active link style in the gallery filter
+  $('.gallery-list-item').click(function () {
+    $(this).addClass('active-item').siblings().removeClass('active-item');
+  })
 });
