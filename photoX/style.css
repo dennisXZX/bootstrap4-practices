@@ -184,6 +184,9 @@ header {
 .customers {
   background: #151f20;
 }
+.carousel-indicators li {
+  cursor: pointer;
+}
 /* end of customers */
 
 /* pricing */
