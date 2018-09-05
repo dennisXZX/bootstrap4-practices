@@ -178,6 +178,12 @@ header {
 }
 /* end of gallery */
 
+/* customers */
+.customers {
+  background: #151f20;
+}
+/* end of customers */
+
 /* overwrite Bootstrap4 CSS */
 .navbar-toggler:focus, .navbar-toggler:hover {
   outline: none;
