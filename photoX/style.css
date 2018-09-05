@@ -323,6 +323,19 @@ header {
 }
 /* end of contact */
 
+/* footer */
+.footer-link {
+  color: #eee;
+  font-size: 13px;
+  transition: all .3s;
+}
+
+.footer-link:hover {
+  color: #70aed2;
+  text-decoration: none;
+}
+/* end of footer */
+
 /* overwrite Bootstrap4 CSS */
 .navbar-toggler:focus, .navbar-toggler:hover {
   outline: none;
