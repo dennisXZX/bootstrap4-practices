@@ -63,13 +63,13 @@ $(document).ready(function () {
   // smooth scrolling
   $("#myNavbar a").on('click', function (event) {
     console.log('click')
-    // HTMLHyperlinkElementUtils.hash property returns a DOMString containing a '#' followed by the fragment identifier of the URL
+    // hash property returns a DOMString containing a '#' followed by the fragment identifier of the URL
     if (this.hash !== "") {
       event.preventDefault()
 
       const hash = this.hash
 
-      // $(hash).offset().top gets the current top position of the clicked element
+      // $(hash).offset().top gets the top position of the HTML element associated with the hash id
       // after scrolling to the specified position, update the address bar with the new hash value
       $('html, body').animate({
         scrollTop: $(hash).offset().top

@@ -1,0 +1,48 @@
+#main-header img {
+  width: 100%;
+  height: 100%;
+}
+
+#main-header .port-item {
+  width: 30%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.social-icon i {
+  transition: all .4s;
+}
+
+.social-icon i:hover {
+  transform: scale(1.5);
+}
+
+.social-icon-twitter i:hover {
+  color: #007bff;
+}
+
+.social-icon-facebook i:hover {
+  color: #28a745;
+}
+
+.social-icon-instagram i:hover {
+  color: #ffc107;
+}
+
+.social-icon-github i:hover {
+  color: #dc3545;
+}
+
+.bg-black {
+  color: #fff;
+  background: #000;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
