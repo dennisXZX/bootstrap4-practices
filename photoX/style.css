@@ -30,7 +30,7 @@ header {
     color: #70aed2;
   }
 
-  .nav-active {
+  .active {
     color: #70aed2;
   }
 
@@ -94,7 +94,6 @@ header {
   /* end of banner */
 
 /* end of header */
-
 
 /* mission */
 .mission {

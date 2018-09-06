@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="style.css">
     <title>PhotoX</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#photo-x-navbar" data-offset="0">
 
     <!-- header -->
-    <header>
+    <header id="home">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top nav-menu">
+        <nav id="photo-x-navbar" class="navbar navbar-expand-lg fixed-top nav-menu">
 
             <!-- logo -->
             <a href="#" class="navbar-brand text-light text-uppercase">
@@ -37,25 +37,25 @@
             <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="myNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+                        <a href="#home" class="nav-link m-2 menu-item">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item">Mission</a>
+                        <a href="#mission" class="nav-link m-2 menu-item">Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item">Collection</a>
+                        <a href="#collection" class="nav-link m-2 menu-item">Collection</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item">Gallery</a>
+                        <a href="#gallery" class="nav-link m-2 menu-item">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item">Customers</a>
+                        <a href="#customers" class="nav-link m-2 menu-item">Customers</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item">Pricing</a>
+                        <a href="#pricing" class="nav-link m-2 menu-item">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item">Contact</a>
+                        <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
     <!-- end of header -->
 
     <!-- mission section -->
-    <section class="p-5 mission">
+    <section id="mission" class="p-5 mission">
         <div class="container-fluid">
             <!-- mission title -->
             <div class="row text-white text-center">
@@ -125,7 +125,7 @@
     <!-- end of mission -->
 
     <!-- collection -->
-    <section class="bg-secondary py-4">
+    <section id="collection" class="bg-secondary py-4">
         <div class="container-fluid">
             <!-- title -->
             <div class="row text-white text-center">
@@ -196,7 +196,7 @@
     <!-- end of collection -->
 
     <!-- gallery -->
-    <section class="py-5">
+    <section id="gallery" class="py-5">
         <div class="container-fluid">
             <!-- title -->
             <div class="row text-muted text-center">
@@ -249,7 +249,7 @@
     <!-- end of gallery -->
 
     <!-- customers -->
-    <section class="p-5 customers">
+    <section id="customers" class="p-5 customers">
         <div class="container-fluid">
             <!-- title -->
             <div class="row text-white text-center">
@@ -361,7 +361,7 @@
     <!-- end of customers -->
 
     <!-- pricing -->
-    <section class="bg-light text-center p-5">
+    <section id="pricing" class="bg-light text-center p-5">
         <div class="container-fluid">
             <!-- title -->
             <div class="row text-muted text-center">
@@ -438,7 +438,7 @@
     <!-- end of pricing -->
 
     <!-- contact -->
-    <section class="contact p-5">
+    <section id="contact" class="contact p-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-5 pb-4">
@@ -448,19 +448,19 @@
                     <form class="contact-form">
                         <!-- name filed -->
                         <div class="form-group py-4">
-                            <input type="text" class="form-control my-2 p-2 input" placeholder="Name">
+                            <input id="name" type="text" class="form-control my-2 p-2 input" placeholder="Name">
                             <label for="name" class="label">Name</label>
                         </div>
 
                         <!-- email field -->
                         <div class="form-group py-4">
-                            <input type="email" class="form-control my-2 p-2 input" placeholder="Email Address">
+                            <input id="email" type="email" class="form-control my-2 p-2 input" placeholder="Email Address">
                             <label for="email" class="label">Email Address</label>
                         </div>
 
                         <!-- newsletter checkbox -->
                         <div class="form-group py-4 my-4">
-                            <input class="mr-1" type="checkbox" checked>
+                            <input id="check" class="mr-1" type="checkbox" checked>
                             <label for="check" class="text-white">Send Announcements</label>
                         </div>
 
