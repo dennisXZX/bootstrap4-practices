@@ -28,7 +28,9 @@ $(document).ready(function () {
     $(function () {
         // use CSS attribute selector to bind an event handler to all anchors that contain # in href, <a href="#step1">yes</a>
         // but exclude anchors with href exactly equals to #, <a href="#">no</a>
-        $('a[href*=#]:not([href=#])').click(function () {
+        // To use any of the meta-characters as a literal part of a name, it must be escaped with with two backslashes: \\
+        // https://api.jquery.com/category/selectors/
+        $('a[href*=\\#]:not([href=\\#])').click(function () {
 
             // Two conditional checks
 

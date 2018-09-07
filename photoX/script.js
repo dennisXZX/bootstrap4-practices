@@ -62,7 +62,6 @@ $(document).ready(function () {
 
   // smooth scrolling
   $("#myNavbar a").on('click', function (event) {
-    console.log('click')
     // hash property returns a DOMString containing a '#' followed by the fragment identifier of the URL
     if (this.hash !== "") {
       event.preventDefault()
